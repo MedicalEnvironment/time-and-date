@@ -21,9 +21,12 @@ void displayStatus(const std::vector<Task>& tasks, const Task& currentTask) {
     }
 
     if (!currentTask.name.empty()) {
-        int currentHours = static_cast<int>((std::time(nullptr) - currentTask.startTime) / 3600);
+        std::time_t currentDuration = std::time(nullptr) - currentTask.startTime;
+        int currentHours = static_cast<int>(currentDuration / 3600);
+        int currentMinutes = static_cast<int>((currentDuration % 3600) / 60);
+        int currentSeconds = static_cast<int>(currentDuration % 60);
         std::cout << "Currently running task: " << currentTask.name << ", Duration: "
-                  << currentHours << " hours" << std::endl;
+                  << currentHours << " hours / " << currentMinutes << " minutes / "  << currentSeconds << " seconds" << std::endl;
     } else {
         std::cout << "No currently running task." << std::endl;
     }
