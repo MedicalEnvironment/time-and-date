@@ -1,0 +1,3 @@
+/Users/gasoline/CLionProjects/data(assignemnt1)/cmake-build-debug/CMakeFiles/data_assignemnt1_.dir
+/Users/gasoline/CLionProjects/data(assignemnt1)/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/gasoline/CLionProjects/data(assignemnt1)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
